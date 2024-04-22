@@ -13,4 +13,18 @@ running on the same machine.
 
 ### Running RabbitMQ
 <img src= "/Users/farrelayman/Desktop/Screen Shot 2024-04-22 at 22.24.57.png" width="600px"> <br>
+This is the default state of RabbitMQ.
 
+### Running subscriber
+<img src= "/Users/farrelayman/Desktop/Screen Shot 2024-04-22 at 22.44.32.png" width="600px"> <br>
+This is the terminal state after running subscriber. The output is a result from running publisher multiple times
+as shown in the next picture.
+
+### Running publisher
+<img src= "/Users/farrelayman/Desktop/Screen Shot 2024-04-22 at 22.42.08.png" width="600px"> <br>
+This is the state after running publisher multiple times.
+
+### Running RabbitMQ after connection
+<img src= "/Users/farrelayman/Desktop/Screen Shot 2024-04-22 at 22.44.57.png" width="600px"> <br>
+This is the state of RabbitMQ after running subscriber. The ```Connections: 1``` indicates that there's
+1 subscriber making connection to the broker.
