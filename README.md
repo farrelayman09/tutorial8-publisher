@@ -26,6 +26,7 @@ This is the state after running publisher multiple times.
 
 ### Running RabbitMQ after connection
 <img src= "/Users/farrelayman/Desktop/Screen Shot 2024-04-22 at 22.44.57.png" width="600px"> <br>
+
 This is the state of RabbitMQ after running subscriber. The ```Connections: 1``` indicates that there's
 1 subscriber making connection to the broker.
 
@@ -33,4 +34,10 @@ This is the state of RabbitMQ after running subscriber. The ```Connections: 1```
 <img src= "/Users/farrelayman/Desktop/Screen Shot 2024-04-22 at 22.59.27.png" width="600px"> <br>
 This is the state of RabbitMQ after running the publisher multiple times. It is shown that there is an increase in messages in a time interval. 
 This is because of the multiple cargo runs of the the publisher project. 
-Every time the publisher is implemented, there will be an increase in the message rate on rabbitMQ which is useful information.
+Every time the publisher is implemented, there will be an increase in the message rate on RabbitMQ which is useful information.
+
+### Running the publisher repeatedly
+<img src= "/Users/farrelayman/Desktop/Screen Shot 2024-04-22 at 23.07.40.png" width="600px"> <br>
+After making the subscriber slower, the total number of queued 
+messages after running cargo run five times is 20. This indicates the number of messages that are still in the 
+queue at that current time, before they are received by the subsciber.
