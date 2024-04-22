@@ -10,3 +10,7 @@ The publisher program will send 5 messages to the broker. It is reflected in the
 ### b. The url of: “amqp://guest:guest@localhost:5672” is the same as in the subscriber program, what does it mean?
 It means that both subscriber and publisher programs are connected to the same message broker that's
 running on the same machine.
+
+### Running RabbitMQ
+<img src= "/Users/farrelayman/Desktop/Screen Shot 2024-04-22 at 22.24.57.png" width="600px"> <br>
+
