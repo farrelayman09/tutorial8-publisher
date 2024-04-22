@@ -28,3 +28,9 @@ This is the state after running publisher multiple times.
 <img src= "/Users/farrelayman/Desktop/Screen Shot 2024-04-22 at 22.44.57.png" width="600px"> <br>
 This is the state of RabbitMQ after running subscriber. The ```Connections: 1``` indicates that there's
 1 subscriber making connection to the broker.
+
+### Running the publisher repeatedly
+<img src= "/Users/farrelayman/Desktop/Screen Shot 2024-04-22 at 22.59.27.png" width="600px"> <br>
+This is the state of RabbitMQ after running the publisher multiple times. It is shown that there is an increase in messages in a time interval. 
+This is because of the multiple cargo runs of the the publisher project. 
+Every time the publisher is implemented, there will be an increase in the message rate on rabbitMQ which is useful information.
