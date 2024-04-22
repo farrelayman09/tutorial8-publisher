@@ -36,3 +36,12 @@ This is the state of RabbitMQ after running the publisher multiple times. It is 
 This is because of the multiple cargo runs of the the publisher project. 
 Every time the publisher is implemented, there will be an increase in the message rate on RabbitMQ which is useful information.
 
+### Running at least three subscribers
+<img src= "assets/images/Screen Shot 2024-04-22 at 23.28.13.png" width="600px"> <br>
+<img src= "assets/images/Screen Shot 2024-04-22 at 23.28.53.png" width="600px"> <br>
+The spike in the queued messages graph is less pronounced and declines more rapidly. 
+This is because there are three subscribers, allowing the message broker to distribute 
+the queued messages among all three simultaneously, which is significantly quicker than if there were only one subscriber.
+In the first picture, it is visible that the cargo runs of publisher is split to be received by three separate subscriber
+consoles. Therefore the process becomes a lot faster.
+
